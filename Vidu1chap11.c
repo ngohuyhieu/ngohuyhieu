@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main1() {
+void main1(){
 	int num[5];
 	int i;
 	num[0] = 10;
@@ -7,7 +7,8 @@ int main1() {
 	num[2] = 60;
 	num[3] = 40;
 	num[4] = 50;
-	for (i = 0; i < 5; i++)
-		printf("\n Number at [%d] is %d", i, num[i]);
-	return 0;
+	for(i=0;i<5;i++)
+	{
+	printf("\n Number at [%d] is %d" ,i, num[i]);
+	}
 }

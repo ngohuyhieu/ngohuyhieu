@@ -1,14 +1,11 @@
 #include <stdio.h>
-	void main3()
+void main3(){
+	char alpha[26];
+	int i, j;
+	for(i=65,j=0; i<91; i++,j++)
 	{
-		char alpha[26];
-		int i, j;
-		
-		for(i = 65, j = 0; i < 91; i++, j++)
-		{
-			alpha[j] = i;
-				printf("The character now assigned is %c\n", alpha[j]);
-		}
-		getchar();
+	alpha[j] = i;
+	printf("The character now assigned is %c \n", alpha[j]);
 	}
-
+	getchar();
+}
