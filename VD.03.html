@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Border Image</title>
+    <style type="text/css">
+        p{
+            width: 197px;
+            height: 54px;
+            border: 11px solid #ffffff;
+        /*
+        width : "chiều cao"
+        height: "chiều rộng"
+        border: "đường viền"
+        */
+        }
+        p.one {
+            -moz-border-image: url("dots.gif") 11 11 11 11 stretch;
+            -webkit-border-image: url("dots.gif") 11 11 11 11 stretch;
+            border-image: url("dots.gif") 11 11 11 11 stretch;
+        /*
+         -moz-border-image : "thuộc tính đường viền"
+         webkit-border-imag : "thuộc tính đường viền"
+         border-image: "kiểu đường viền ảnh"
+        */
+        }
+        p.two {
+           -moz-border-image: url("dots.gif") 11 11 11 11 round;
+           -webkit-border-image: url("dots.gif") 11 11 11 11 round;
+            border-image: url("dots.gif") 11 11 11 11 round;
+        /*
+         -moz-border-image : "thuộc tính đường viền"
+         webkit-border-imag : "thuộc tính đường viền"
+         border-image: "kiểu đường viền ảnh"
+        */
+        }
+
+    </style>
+</head>
+<body>
+    <P class="one"></P>
+    <P class="two"></P>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Boxes</title>
+        <style type="text/css">
+            body{
+                font-family: "Courier New", Courier, monospace;
+                font-size: 80%;
+                letter-spacing: 0.15em;
+                background-color: #efefef;
+            /*
+            font-family: "thiết lập font chữ hiện thị cho các phần tử body"
+            font-size: 80% : "Chỉ ra giá trị phần trăm so với font chữ phần tử cha là 80%"
+            letter-spacing: 0.15em : "khoảng cách giữa các chữ 0.15em"
+            background-color: #efefef :"màu nền (trắng)
+            */
+            }
+            #page{
+                max-width: 940px;
+                min-width: 720px;
+                margin: 10px auto 10px auto;
+                padding: 20px;
+                border: 4px double #000;
+                background-color: #ffffff;
+            /*
+            max-width: 940px :" chiều rộng lớn nhất là 940px"
+            min-width: 720px :" chiều rộng nhỏ nhất là 720px"
+            margin: 10px auto 10px auto :" căn lề
+            padding: 20px :"viết ngắn gọn các thuộc tính bên dưới"
+            border: 4px double #000 :"đường viền"
+
+            */
+            }
+            #logo{
+                width: 150px;
+                margin: 10px auto 10px auto;
+            }
+            ul{
+                width: 570px;
+                padding: 15px;
+                margin: 0px auto 0px auto;
+                border-top: 2px solid #000;
+                border-bottom: 1px solid #000;
+                text-align: center;
+            /*
+            width: "chiều rộng của box css"
+            padding: 20px :"viết ngắn gọn các thuộc tính bên dưới"
+            margin: vị trí xác định
+            border-top :" xác định đường viền bên trên"
+            border-bottom :"xác định đường viền bên dưới"
+            text-align :" căn lề"
+            */
+            }
+            li{
+                display: initial;
+                margin: 0px 3px;
+            /*
+            display :"xác định kiểu hiển thị "
+             margin: vị trí xác định
+            */
+            }
+            p{
+                text-align: center;
+                width: 600px;
+                margin: 20px auto 20px auto;
+                font-weight: normal;
+            /*
+            text-align :" căn lề"
+            width: "chiều rộng của box css"
+            margin: vị trí xác định
+            font-weight :"độ dày mỏng của chữ"
+            */
+            }
+            a{
+                text-decoration: none;
+                color: #000000;
+                text-transform: uppercase;
+                padding: 6px 18px 5px 18px;
+            /*
+            text-decoration :"thiết lập đường kẻ qua chữ"
+            color: màu chữ
+            padding:"viết ngắn gọn các thuộc tính bên dưới"
+            text-transform :"thiết lập các ký tự viết hoa cho văn bản"
+            */
+            }
+            a:hover, a.on {
+                color: #cc3333;
+                background-color: #ffffff;
+            /*
+            color: màu chữ
+            background-color: màu nền
+            */
+            }
+         </style>
+    </head>
+     <body>
+         <div id="page">
+            <div id="logo">
+            <img src="logo.gif" alt="The Analog Specialists" />
+            </div>
+            <ul id="navigation">
+            <li><a href="#" class="on">Home</a></li>
+            <li><a href="#" >For Sale</a></li>
+            <li><a href="#">Repairs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            <p>
+                <img src="keys.jpg" alt="Fender Rhodes, Hohner Clavinet, and Wurlitzer EP200">
+            </p>
+            <p>
+              We specialize in the sale and repair of classic keyboards, in particular the Fender Rhodes,
+              Wurlitzer EP200, and Hohner Clavinet.
+            </p>
+         </div>
+     </body>
+</html>
